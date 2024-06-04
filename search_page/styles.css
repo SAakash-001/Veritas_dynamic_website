@@ -1,0 +1,209 @@
+/* Global Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Table Styles */
+/* .table {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+/* Form Styles */
+/* .form-control,
+.form-select {
+    border-radius: 5px;
+}
+
+.input-group-append button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}  */
+
+/* Styles for the navigation menu */
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 4px;
+  }
+  
+  .nav-link {
+    padding: 8px 16px;
+    margin-top: 8px;
+    font-size: 14px;
+    background-color: transparent;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #333;
+    background-color: #f0f0f0;
+  }
+  
+  .nav-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+  }
+  
+
+/* Responsive Styles */
+/* @media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+        height: auto;
+    }
+}  */
+
+
+
+/* 
+<div class="input-group mt-3">
+                                <select name="filter_state" class="form-select">
+                                    <option value="">Filter by State</option>
+                                    <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+                                    <option value="ASSAM">ASSAM </option>
+                                    <option value="BIHAR">BIHAR </option>
+                                    <option value="CHANDIGARH">CHANDIGARH </option>
+                                    <option value="CHHATTISGARH">CHHATTISGARH </option>
+                                    <option value="DADRA & NAGAR HAVELI">DADRA & NAGAR HAVELI </option>
+                                    <option value="DAMAN & DIU">DAMAN & DIU </option>
+                                    <option value="DELHI">DELHI </option>
+                                    <option value="GOA">GOA </option>
+                                    <option value="GUJARAT">GUJARAT </option>
+                                    <option value="HARYANA">HARYANA </option>
+                                    <option value="HIMACHAL PRADESH">HIMACHAL PRADESH </option>
+                                    <option value="JAMMU & KASHMIR">JAMMU & KASHMIR </option>
+                                    <option value="JHARKHAND">JHARKHAND </option>
+                                    <option value="KARNATAKA">KARNATAKA </option>
+                                    <option value="KERALA">KERALA </option>
+                                    <option value="LADAKH">LADAKH </option>
+                                    <option value="LAKSHADWEEP">LAKSHADWEEP </option>
+                                    <option value="MADHYA PRADESH">MADHYA PRADESH </option>
+                                    <option value="MAHARASHTRA">MAHARASHTRA </option>
+                                    <option value="MANIPUR">MANIPUR </option>
+                                    <option value="MEGHALAYA">MEGHALAYA </option>
+                                    <option value="MIZORAM">MIZORAM </option>
+                                    <option value="NAGALAND">NAGALAND </option>
+                                    <option value="ORISSA">ORISSA </option>
+                                    <option value="PUDUCHERRY">PUDUCHERRY </option>
+                                    <option value="PUNJAB">PUNJAB </option>
+                                    <option value="RAJASTHAN">RAJASTHAN </option>
+                                    <option value="SIKKIM">SIKKIM </option>
+                                    <option value="TAMIL NADU">TAMIL NADU </option>
+                                    <option value="TELANGANA">TELANGANA </option>
+                                    <option value="TRIPURA">TRIPURA </option>
+                                    <option value="UTTAR PRADESH">UTTAR PRADESH </option>
+                                    <option value="UTTARAKHAND">UTTARAKHAND </option>
+                                    <option value="WEST BENGAL">WEST BENGAL</option>
+                                </select>
+                                <select name="filter_sector" class="form-select ms-2">
+                                    <option value="">Filter by Sector</option>
+                                    <option value="Animal Husbandry">Animal Husbandry</option>
+                                    <option value="Health & Family Welfare">Health & Family Welfare</option>
+                                    <!-- <option value="Prisoner's Issues">Prisoner's Issues</option> -->
+                                    <option value="Animal Welfare">Animal Welfare</option>
+                                    <option value="Rural Development & Poverty Alleviation">Rural Development & Poverty Alleviation</option>
+                                    <option value="Education & Literacy">Education & Literacy</option>
+                                    <option value="Micro Small & Medium Enterprises">Micro Small & Medium Enterprises</option>
+                                    <option value="Minority Issues">Minority Issues</option>
+                                    <option value="Housing">Housing</option>
+                                    <option value="Sports">Sports</option>
+                                    <option value="Urban Development & Poverty Alleviation">Urban Development & Poverty Alleviation</option>
+                                    <option value="Tribal Affairs">Tribal Affairs</option>
+                                    <option value="Civic Issues">Civic Issues</option>
+                                    <option value="Aged/Elderly">Aged/Elderly</option>
+                                    <option value="Human Rights">Human Rights</option>
+                                    <option value="Environment & Forests">Environment & Forests</option>
+                                    <option value="Food Processing">Food Processing</option>
+                                    <option value="Micro Finance (SHGs)">Micro Finance (SHGs)</option>
+                                    <option value="Children">Children</option>
+                                    <option value="Water Resources">Water Resources</option>
+                                    <option value="Information & Communication Technology">Information & Communication Technology</option>
+                                    <option value="Tourism">Tourism</option>
+                                    <option value="Land Resources">Land Resources</option>
+                                    <option value="Labour & Employment">Labour & Employment</option>
+                                    <option value="Scientific & Industrial Research">Scientific & Industrial Research</option>
+                                    <option value="Right to Information & Advocacy">Right to Information & Advocacy</option>
+                                    <option value="Science & Technology">Science & Technology</option>
+                                    <option value="Nutrition">Nutrition</option>
+                                    <option value="Differently Abled">Differently Abled</option>
+                                    <option value="Agriculture">Agriculture</option>
+                                    <option value="Art & Culture">Art & Culture</option>
+                                    <option value="Panchayati Raj">Panchayati Raj</option>
+                                    <option value="HIV/AIDS">HIV/AIDS</option>
+                                    <option value="Youth Affairs">Youth Affairs</option>
+                                    <option value="Skill Development">Skill Development</option>
+                                    <option value="Legal Awareness & Aid">Legal Awareness & Aid</option>
+                                    <option value="New & Renewable Energy">New & Renewable Energy</option>
+                                    <option value="Dalit Upliftment">Dalit Upliftment</option>
+                                    <option value="Biotechnology">Biotechnology</option>
+                                    <option value="Disaster Management">Disaster Management</option>
+                                    <option value="Vocational Training">Vocational Training</option>
+                                    <option value="Drinking Water">Drinking Water</option>
+                                    <option value="Dairying  &  Fisheries">Dairying  &  Fisheries</option>
+                                    <option value="Women's Development & Empowerment">Women's Development & Empowerment</option>
+                                </select> */
+
+
+                                /* <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"> */

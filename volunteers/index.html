@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteers</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+	<!-- Alpine -->
+	<script type="module" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+	<script nomodule src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine-ie11.min.js" defer></script>
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<!-- Custom style -->
+	<link rel="stylesheet" href="css/Veritas.css" />
+	<!-- Poppins font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div x-data="{ open: false }" class="w-full text-gray-700 bg-cream">
+        <div class="flex flex-col max-w-screen-xl px-8 mx-auto md:items-center md:justify-between md:flex-row">
+            <div class="flex flex-row items-center justify-between py-6">
+                <div class="relative md:mt-8">
+                    <a href="#" class="text-lg relative z-50 font-bold tracking-widest text-gray-900 rounded-lg focus:outline-none focus:shadow-outline">Veritas</a>
+                    <svg class="h-11 z-40 absolute -top-2 -left-3" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M35.2574 2.24264C37.6005 -0.100501 41.3995 -0.100505 43.7426 2.24264L76.7574 35.2574C79.1005 37.6005 79.1005 41.3995 76.7574 43.7426L43.7426 76.7574C41.3995 79.1005 37.6005 79.1005 35.2574 76.7574L2.24264 43.7426C-0.100501 41.3995 -0.100505 37.6005 2.24264 35.2574L35.2574 2.24264Z" fill="#65DAFF"/>
+                    </svg>
+                </div>
+                <button class="rounded-lg md:hidden focus:outline-none focus:shadow-outline" @click="open = !open">
+                    <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
+                        <path x-show="!open" fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                        <path x-show="open" fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
+            <nav :class="{ 'transform md:transform-none': !open, 'h-full': open }" class="h-0 md:h-auto flex flex-col flex-grow md:items-center pb-4 md:pb-0 md:flex md:justify-end md:flex-row origin-top duration-300 scale-y-0">
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="../index.html">Home</a>
+                <!-- <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">Careers</a> -->
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="../index.html">Blog</a>
+                <a class="px-4 py-2 mt-2 text-sm bg-transparent rounded-lg md:mt-8 md:ml-4 hover:text-gray-900 focus:outline-none focus:shadow-outline" href="#">About Us</a>
+ 
+            </nav>
+        </div>
+    </div>
+
+    <div class="max-w-screen-xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <div class="card">
+        <div class="image"><img src=".\volunteersimage\male1.jpeg" alt=""></div>
+        <div class="content">
+            <a href="#">
+                <span class="title">Amit Kumar</span>
+            </a>
+            <p class="desc">
+                Age: 35<br>
+                Gender: Male<br>
+                Location: New Delhi, India<br>
+                Availability: Weekdays and weekends<br>
+                Volunteering Interests: Education, Health, Community Development
+            </p>
+            <a class="action" href="mailto:amit@example.com">
+                Contact Now
+                <span aria-hidden="true">→</span>
+            </a>
+        </div>
+    </div>
+    
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\female1.jpeg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Priya Sharma</span>
+                  </a>
+                  <p class="desc">
+                      Age: 26<br>
+                      Gender: Female<br>
+                      Location: Kolkata, India<br>
+                      Availability: Weekends<br>
+                      Volunteering Interests: Education, Child Welfare, Environmental Sustainability
+                  </p>
+                  <a class="action" href="mailto:priya@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male3.jpeg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Rohan Patel</span>
+                  </a>
+                  <p class="desc">
+                      Age: 29<br>
+                      Gender: Male<br>
+                      Location: Ahmedabad, India<br>
+                      Availability: Weekdays<br>
+                      Volunteering Interests: Health, Community Development, Disaster Relief
+                  </p>
+                  <a class="action" href="mailto:rohan@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\female2.jpg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Ananya Reddy</span>
+                  </a>
+                  <p class="desc">
+                      Age: 27<br>
+                      Gender: Female<br>
+                      Location: Hyderabad, India<br>
+                      Availability: Weekends<br>
+                      Volunteering Interests: Women Empowerment, Skill Development, Animal Welfare
+                  </p>
+                  <a class="action" href="mailto:ananya@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male5.jpeg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Aditya Verma</span>
+                  </a>
+                  <p class="desc">
+                      Age: 32<br>
+                      Gender: Male<br>
+                      Location: Chennai, India<br>
+                      Availability: Evenings<br>
+                      Volunteering Interests: Education, Elderly Care, Environmental Cleanup
+                  </p>
+                  <a class="action" href="mailto:aditya@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+              
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\female3.png" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Neha Kapoor</span>
+                  </a>
+                  <p class="desc">
+                      Age: 30<br>
+                      Gender: Female<br>
+                      Location: Jaipur, India<br>
+                      Availability: Weekends<br>
+                      Volunteering Interests: Health, Women Empowerment, Community Outreach
+                  </p>
+                  <a class="action" href="mailto:neha@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male7.jpg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Arjun Singhania</span>
+                  </a>
+                  <p class="desc">
+                      Age: 28<br>
+                      Gender: Male<br>
+                      Location: Pune, India<br>
+                      Availability: Weekdays<br>
+                      Volunteering Interests: Education, Skill Development, Environmental Conservation
+                  </p>
+                  <a class="action" href="mailto:arjun@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\female4.jpg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Deepika Menon</span>
+                  </a>
+                  <p class="desc">
+                      Age: 25<br>
+                      Gender: Female<br>
+                      Location: Kochi, India<br>
+                      Availability: Weekdays after 6 PM<br>
+                      Volunteering Interests: Animal Welfare, Environmental Cleanup, Community Building
+                  </p>
+                  <a class="action" href="mailto:deepika@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male4.jpeg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Rajat Malhotra</span>
+                  </a>
+                  <p class="desc">
+                      Age: 31<br>
+                      Gender: Male<br>
+                      Location: Chandigarh, India<br>
+                      Availability: Weekdays and weekends<br>
+                      Volunteering Interests: Education, Elderly Care, Disaster Relief
+                  </p>
+                  <a class="action" href="mailto:rajat@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\female5.jpg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Sneha Sharma</span>
+                  </a>
+                  <p class="desc">
+                      Age: 29<br>
+                      Gender: Female<br>
+                      Location: Lucknow, India<br>
+                      Availability: Weekends<br>
+                      Volunteering Interests: Education, Child Welfare, Environmental Sustainability
+                  </p>
+                  <a class="action" href="mailto:sneha@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male8.jpg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Karan Singh</span>
+                  </a>
+                  <p class="desc">
+                      Age: 33<br>
+                      Gender: Male<br>
+                      Location: Indore, India<br>
+                      Availability: Weekdays<br>
+                      Volunteering Interests: Health, Community Development, Disaster Relief
+                  </p>
+                  <a class="action" href="mailto:karan@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male9.jpg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Vinay Gupta</span>
+                  </a>
+                  <p class="desc">
+                      Age: 27<br>
+                      Gender: Male<br>
+                      Location: Bhopal, India<br>
+                      Availability: Weekends<br>
+                      Volunteering Interests: Women Empowerment, Skill Development, Animal Welfare
+                  </p>
+                  <a class="action" href="mailto:swati@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male5.jpeg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Akash Patel</span>
+                  </a>
+                  <p class="desc">
+                      Age: 32<br>
+                      Gender: Male<br>
+                      Location: Surat, India<br>
+                      Availability: Evenings<br>
+                      Volunteering Interests: Education, Elderly Care, Environmental Cleanup
+                  </p>
+                  <a class="action" href="mailto:akash@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male6.jpg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Aarav Singh</span>
+                  </a>
+                  <p class="desc">
+                      Age: 28<br>
+                      Gender: Male<br>
+                      Location: Mumbai, India<br>
+                      Availability: Weekdays and weekends<br>
+                      Volunteering Interests: Education, Environment, Community Development
+                  </p>
+                  <a class="action" href="mailto:aarav@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\female4.jpg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Isha Gupta</span>
+                  </a>
+                  <p class="desc">
+                      Age: 24<br>
+                      Gender: Female<br>
+                      Location: Delhi, India<br>
+                      Availability: Weekends<br>
+                      Volunteering Interests: Health, Women Empowerment, Animal Welfare
+                  </p>
+                  <a class="action" href="mailto:isha@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="image"><img src=".\volunteersimage\male2.jpeg" alt=""></div>
+              <div class="content">
+                  <a href="#">
+                      <span class="title">Rajesh Kumar</span>
+                  </a>
+                  <p class="desc">
+                      Age: 30<br>
+                      Gender: Male<br>
+                      Location: Bangalore, India<br>
+                      Availability: Evenings<br>
+                      Volunteering Interests: Technology, Skill Development, Elderly Care
+                  </p>
+                  <a class="action" href="mailto:rajesh@example.com">
+                      Contact Now
+                      <span aria-hidden="true">→</span>
+                  </a>
+              </div>
+            </div>
+</div>  
+<!-- Add more cards with Indian volunteers and their interests -->
+
+
+  <!-- </div> -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
