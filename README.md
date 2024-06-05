@@ -27,7 +27,7 @@ To run the project locally, follow these steps:
 3. Import the SQL schema file located in the `database` directory to create the necessary tables.
 4. Configure the database connection details in the `connection.php` file.
 5. Start the local web server and navigate to the project's URL in your web browser.
-6. If you use Xampp Server add this Folder into htdocs folder , activate your Xampp Server and follow this link http://localhost/veritas-main/
+6. If you use Xampp Server add this Folder into htdocs folder under xampp folder present in your C-drive , activate your Xampp Server and follow this link http://localhost/veritas-main/
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request. Make sure to follow the project's coding standards and guidelines.
