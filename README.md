@@ -1,4 +1,4 @@
-![veritas-home-ezgif com-gif-to-mp4-converter](https://github.com/SAakash-001/Veritas_dynamic_website/assets/138322859/fe1c2898-3c68-499d-b35d-356b784e3c27)# Veritas: A Seamless Communication Platform for NGOs and Volunteers
+# Veritas: A Seamless Communication Platform for NGOs and Volunteers
 
 ## Overview
 Veritas is a web-based platform designed to facilitate seamless communication between Non-Governmental Organizations (NGOs) and volunteers. It aims to bridge the gap and streamline the collaboration process, enabling efficient coordination and effective utilization of resources.
